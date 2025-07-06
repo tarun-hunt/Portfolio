@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-color: #FFF3DA;
+}
+
+div {
+  border: 3px solid #8D735A;
+  background-color: #FFDCBB;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.tarun {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  margin: 50px auto;
+  padding: 7px;
+  border: 5px solid #54412ECC;
+}
+
+.about {
+  padding: 25px;
+  width: 90%;
+  margin: 0 5% 0 5%;
+  margin: 40px auto;
+  
+}
+
+.name {
+  margin: 50px 5% 50px 5%;
+  height: 500px;
+  width: 95%;
+  margin: 40px auto;
+  padding-bottom: 20px;
+  border: 3px solid #816850;
+  text-align: center;
+  color: #700000;
+}
+
+.skills {
+  width: 83%;
+  height: 100%;
+  
+  margin: 0 auto;
+  padding: 60px;
+  
+}
+
+.skul {
+  margin-top: 3%;
+  border: 0px;
+}
+
+.skil {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.contact {
+  width: 90%;
+  height: 100%;
+  padding: 25px;
+  margin: 40px auto;
+}
+
+.yt {
+  width: 90%;
+  margin: 40px auto;
+  padding: 25px;
+}
+
+.yt_btn {
+  width: 50%;
+  border: 0;
+  background-color: #FF000000;
+}
+
+
+.logo {
+  height: 100%;
+  width: 30%;
+  
+}
+
+
+.x {
+  font-size: 8px;
+}
