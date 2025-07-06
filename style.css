@@ -78,6 +78,7 @@ div {
 .yt_btn {
   width: 50%;
   border: 0;
+  margin: 0;
   background-color: #FF000000;
 }
 
@@ -85,10 +86,11 @@ div {
 .logo {
   height: 100%;
   width: 30%;
-  
+  margin: 0;
+  padding: 0;
 }
 
 
 .x {
-  font-size: 8px;
+  font-size: 12px;
 }
