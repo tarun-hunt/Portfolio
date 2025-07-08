@@ -1,151 +1,233 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+/* Tarun's External CSS - style.css */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: #FFF3DA;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
 }
 
-div {
-  border: 3px solid #8D735A;
+.section {
   background-color: #FFDCBB;
-  border-radius: 30px;
-  font-size: 16px;
+  border: 3px solid #8D735A;
+  border-radius: 20px;
+  margin: 40px auto;
+  padding: 30px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 1s ease-in-out;
 }
 
+.section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 
-h3{
+.center {
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.tarun {
-  height: 300px;
+.tarun-img {
+  display: block;
+  margin: 0 auto 20px auto;
   width: 300px;
-  border-radius: 100%;
-  margin: 50px auto;
-  padding: 7px;
+  height: 300px;
+  border-radius: 50%;
   border: 5px solid #54412ECC;
 }
 
-.about {
-  padding: 25px;
-  width: 90%;
-  margin: 0 5% 0 5%;
-  margin: 40px auto;
-  
-}
-
-.name {
-  margin: 50px 5% 50px 5%;
-  height: 500px;
-  width: 95%;
-  margin: 40px auto;
-  padding-bottom: 20px;
-  border: 3px solid #816850;
-  text-align: center;
+h1 {
   color: #700000;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.skills {
-  width: 83%;
-  height: 100%;
-  
-  margin: 0 auto;
-  padding: 60px;
-  
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
-.skul {
-  margin-top: 3%;
-  border: 0px;
+ul {
+  padding-left: 20px;
 }
 
-.skil {
-  margin: 0 0 20px 0;
-  padding: 0;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
-.contact {
-  width: 90%;
-  height: 100%;
-  padding: 25px;
-  margin: 40px auto;
-}
-
-.yt {
-  width: 90%;
-  margin: 40px auto;
-  padding: 25px;
-}
-
-.yt_btn {
-  width: 50%;
-  border: 0;
-  margin: 0;
-  background-color: #FF000000;
-}
-
-
-.logo {
-  height: 100%;
-  width: 30%;
-  margin: 0;
-  padding: 0;
-}
-
-
-.x {
-  font-size: 12px;
-}
-
-
-.marksheet{
-  width: 90%;
-  margin: 40px auto;
-  padding: 25px;
+th, td {
+  border: 1px solid #3D2401;
+  padding: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 
-
-.t1{
-  border:1px solid #3D2401;
-  text-align: center;
-  padding: 0px auto;
-  font-size: 20px;
-  border-radius: 3px;
-  height: 300px;
-  
-}
-tr{
-  border:1px solid #3D2401;
-  padding: 0;
-}
-
-th{
+th {
   background-color: #FFBF9C;
 }
 
-td{
-  background-color:  #FFE7C6
-  ;
+td {
+  background-color: #FFE7C6;
 }
 
-td,th{
-  width: 200px;
-  margin: 0;
-  padding: 0;
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit {
+  background-color: #69B564;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #58a050;
+}
+
+.yt_btn img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.yt_btn img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+@keyframes slideIn {
+  from {opacity: 0; transform: translateY(50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .tarun-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  table, input, select, textarea, button {
+    font-size: 14px;
+  }
+
+  .submit {
+    font-size: 18px;
+  }
 }
 
 
-.t2{
-  text-align: center;
-  width: 800px;
-  margin: 30px auto;
-  height: 100px;
-  font-size: 25px ;
-  
+/* 🔄 Dark Mode Styling */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-mode .section {
+  background-color: #2e2e2e;
+  border-color: #555;
+}
+
+body.dark-mode .submit {
+  background-color: #4CAF50;
+}
+
+body.dark-mode .yt_btn img:hover {
+  filter: brightness(1.2);
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #444;
+  color: #fff;
+  border-color: #666;
+}
+
+body.dark-mode th {
+  background-color: #444;
+}
+
+body.dark-mode td {
+  background-color: #333;
+}
+
+/* 🌙 Toggle Switch Styling */
+.toggle-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.switch {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* when checked, move circle right */
+#darkModeSwitch:checked+.switch {
+  background-color: #4CAF50;
+}
+
+#darkModeSwitch:checked+.switch::after {
+  transform: translateX(30px);
 }

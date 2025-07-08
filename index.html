@@ -1,128 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tarun's Stylish Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarun Patel | Ultimate Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="name">
-    <img class="tarun" src="IAMGE.jpg" alt="Tarun Patel's image">
-  <h1>TARUN PATEL</h1>
+  <div class="toggle-switch">
+  <input type="checkbox" id="darkModeSwitch">
+  <label for="darkModeSwitch" class="switch"></label>
+</div>
+  <div class="section center">
+    <img class="tarun-img" src="IAMGE.jpg" alt="Tarun Patel">
+    <h1>TARUN PATEL</h1>
+    <p>16 year old aspiring web developer from India!</p>
   </div>
-  <div class="about">
-  <h2>
-    About Me
-  </h2>
-  <p>16 year old aspiring web developer from India!</p>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>Web development mein interest, YouTube par masti, aur coding ka craze – bas yahi hoon main!</p>
   </div>
-  <div class="skills">
-    <h2 class="skil">
-      My Skills
-    </h2>
-    <p><b>Developed Skills</b></p>
+
+  <div class="section">
+    <h2>My Skills</h2>
+    <p><b>Developed Skills:</b></p>
     <ul>
       <li>Basic HTML</li>
       <li>Basic CSS</li>
       <li>Basic Python</li>
     </ul>
-    <div class="skul">
-    <p><b>Developing Skills</b></p>
+    <p><b>Developing Skills:</b></p>
     <ul>
       <li>Advanced HTML</li>
       <li>Advanced CSS</li>
-      <li>Basic CSS</li>
+      <li>JavaScript (Coming Soon!)</li>
     </ul>
-    </div>
   </div>
-  <div class="contact">
-    <h2>
-      Contacts
-    </h2>
-    <p><b>E-mail -</b>  tarunpatel0806@gmail.com</p>
-    <p><b>Mobile No. - </b> 7415437093, 9589317847</p>
-  </div>
-  <div class="yt">
-    <h2>
-      Youtube Channel
-    </h2>
-    <p>TOON-inator</p>
-    <p>@TOON-inator</p>
-    <a href="https://youtube.com/@toon-inator?si=YvKl_wx6Dhcb0d2e"><button class="yt_btn"><img class="logo" src="yt.png" alt="YT"></button></a>
-    <p><b>DO SUBSCRIBE, EAT PERK🍫</b></p>
-    <p class="x">*Click on the logo to go to channel...</p>
-  </div>
-  <div class="marksheet">
-    <h3>
-      9th Marksheet
-    </h3>
-    <table class="t1" border="1px">
-      <tr>
-        <th>SUBJECT</th>
-        <th>THEORY (75)</th>
-        <th>PRACTICAL (25)</th>
-        <th>TOTAL (100)</th>
-        <th>GRADE</th>
-      </tr>
-      <tr>
-        <th>English</th>
-        <td>68</td>
-        <td>24</td>
-        <td>92</td>
-        <td>A+</td>
-      </tr>
-      <tr>
-  <th>Hindi</th>
-  <td>65</td>
-  <td>23</td>
-  <td>88</td>
-  <td>A</td>
-</tr>
-    <tr>
-  <th>Sanskrit</th>
-  <td>60</td>
-  <td>18</td>
-  <td>78</td>
-  <td>B</td>
-</tr>
-      <tr>
-  <th>Maths</th>
-  <td>71</td>
-  <td>25</td>
-  <td>96</td>
-  <td>A+</td>
-</tr>
-<tr>
-  <th>Science</th>
-  <td>68</td>
-  <td>24</td>
-  <td>92</td>
-  <td>A+</td>
-</tr>
-<tr>
-  <th>Social Science</th>
-  <td>72</td>
-  <td>15</td>
-  <td>87</td>
-  <td>A</td>
-</tr>
-<th>TOTAL</th>
-<td>404</td>
-<td>129</td>
-<td>533</td>
-<td>A</td>
-</tr>
-    </table>
-    <table class="t2" border="1px">
-      <tr>
-        <th>PERCENTAGE</th>
-        <td>92.4℅</td>
-      </tr>
-      <tr>
-        <th>STATUS</th>
-        <td>Passed</td>
-      </tr>
-    </table>
-  </div>
-</body>
 
+  <div class="section">
+    <h2>Youtube Channel</h2>
+    <p>TOON-inator (@TOON-inator)</p>
+    <a class="yt_btn" href="https://youtube.com/@toon-inator?si=YvKl_wx6Dhcb0d2e" target="_blank">
+      <img src="yt.png" alt="YouTube Channel">
+    </a>
+    <p><b>DO SUBSCRIBE, EAT PERK 🍫</b></p>
+    <p style="font-size: 14px;">*Click on the logo to go to channel...</p>
+  </div>
+
+  <div class="section">
+    <h2>9th Marksheet</h2>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Theory (75)</th>
+        <th>Practical (25)</th>
+        <th>Total (100)</th>
+        <th>Grade</th>
+      </tr>
+      <tr><th>English</th><td>68</td><td>24</td><td>92</td><td>A+</td></tr>
+      <tr><th>Hindi</th><td>65</td><td>23</td><td>88</td><td>A</td></tr>
+      <tr><th>Sanskrit</th><td>60</td><td>18</td><td>78</td><td>B</td></tr>
+      <tr><th>Maths</th><td>71</td><td>25</td><td>96</td><td>A+</td></tr>
+      <tr><th>Science</th><td>68</td><td>24</td><td>92</td><td>A+</td></tr>
+      <tr><th>Social Science</th><td>72</td><td>15</td><td>87</td><td>A</td></tr>
+      <tr><th><b>Total</b></th><td>404</td><td>129</td><td>533</td><td>A</td></tr>
+    </table>
+    <table>
+      <tr><th>Percentage</th><td>92.4%</td></tr>
+      <tr><th>Status</th><td>Passed</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p><b>Email:</b> tarunpatel0806@gmail.com</p>
+    <p><b>Mobile:</b> 741XXXX093, 958XXX847</p>
+  </div>
+
+  <div class="section">
+    <h2>Feedback Form</h2>
+    <form>
+      <label>Name :</label>
+      <input type="text" name="name" required>
+
+      <label>Age :</label>
+      <input type="number" name="age" required>
+
+      <label>Email :</label>
+      <input type="email" name="email" required>
+
+      <label>Password :</label>
+      <input type="password" name="password" required>
+
+      <label>Gender :</label>
+      <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+        <option value="Rather not say">Rather not say</option>
+      </select>
+
+      <label>Feedback :</label>
+      <textarea rows="5" name="feedback"></textarea>
+
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer center">
+    &copy; 2025 Tarun Patel | Designed with ❤️ and Eat Perk 🍫
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
