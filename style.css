@@ -7,15 +7,17 @@
 }
 
 body {
-  background-color: #FFF3DA;
-  font-family: Arial, sans-serif;
-  color: #333;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #FFFAEF;
+  margin: 0;
 }
 
+
 .section {
-  background-color: #FFDCBB;
-  border: 3px solid #8D735A;
+  background-color: #FFE4CB;
+  border: 3px solid #BBA794;
   border-radius: 20px;
   margin: 40px auto;
   padding: 30px;
@@ -143,6 +145,9 @@ input, select, textarea, button {
     font-size: 24px;
   }
 
+
+
+
   table, input, select, textarea, button {
     font-size: 14px;
   }
@@ -231,3 +236,79 @@ body.dark-mode td {
 #darkModeSwitch:checked+.switch::after {
   transform: translateX(30px);
 }
+
+
+.flashcard {
+  width: 250px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  margin: 70px 50px;
+  
+}
+
+.flashcard:focus {
+  outline: none;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid #EFBB9D;
+
+}
+
+.card-front {
+  background-image: radial-gradient(#FFFFFF,#FCCEFF);
+  text-align: center;
+
+}
+
+.card-back {
+  background-image: radial-gradient(#FFFFFF,#DAFFDD);
+  transform: rotateY(180deg);
+  
+}
+
+
+/* Fully remove blue outline highlight on click/focus */
+.flashcard,
+.flashcard * {
+  -webkit-tap-highlight-color: transparent; /* For mobile */
+  outline: none;
+}
+
+.s1{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+

@@ -51,3 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+function flipCard(card) {
+  card.classList.toggle('flipped');
+}
