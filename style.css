@@ -292,6 +292,8 @@ body.dark-mode td {
 .card-back {
   background-image: radial-gradient(#FFFFFF,#DAFFDD);
   transform: rotateY(180deg);
+  flex-flow: column;
+
   
 }
 
@@ -307,14 +309,14 @@ body.dark-mode td {
   display: flex;
   flex-wrap: wrap;
   
-  
 }
 
 
 
 .card-back .pht{
-  height: 90px;
-  width: 90px;
-  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed black;
+  border-radius: 5%;
   
 }
