@@ -293,6 +293,7 @@ body.dark-mode td {
   background-image: radial-gradient(#FFFFFF,#DAFFDD);
   transform: rotateY(180deg);
   flex-flow: column;
+  display: flex;
 
   
 }
